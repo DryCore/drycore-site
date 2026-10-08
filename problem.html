@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The constraint — DryCore Systems</title>
+<meta name="description" content="Why AI data center heat rejection is colliding with water, hot-day grid cost, and community permission to build.">
+<meta name="theme-color" content="#070d16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@360;460;540&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="emblem.jpg">
+</head>
+<body>
+<div class="progress"></div>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="emblem.jpg" alt=""><b>DRY<span>CORE</span></b></a>
+  <button class="menu-btn" aria-label="Menu">Menu</button>
+  <nav class="nav-links">
+    <a href="index.html">Overview</a>
+    <a href="problem.html" aria-current="page">The constraint</a>
+    <a href="technology.html">System</a>
+    <a href="nsf.html">NSF</a>
+    <a href="company.html">Company</a>
+    <a href="investors.html">Investors</a>
+    <a class="nav-cta" href="contact.html">Talk</a>
+  </nav>
+</header>
+<main>
+  <div class="wrap page-hero">
+    <p class="kicker">The problem</p>
+    <h1>Heat has to leave. The usual ways out are closing.</h1>
+    <p class="lede" style="margin-top:18px">An AI data center has to move an enormous amount of heat out of the building, continuously. The common method evaporates water to do it. The alternative, a sealed dry loop, solves the water problem and pays for it in fan and compressor energy on exactly the hottest afternoons.</p>
+  </div>
+
+  <section class="vision" style="margin-top:36px">
+    <figure>
+      <img src="vision-warm.jpg" alt="Sunset concept of a data center beside water it does not consume">
+      <figcaption>Concept study only. The point of the picture is adjacency: a plant can sit near water without using evaporation as the rejection method.</figcaption>
+    </figure>
+    <figure>
+      <img src="vision-cool.jpg" alt="Night concept of heat-rejection architecture">
+      <figcaption>Night study of the same intent. Cyan is atmosphere, not a measured thermal plume.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="cards">
+        <article class="card">
+          <div class="num">Water</div>
+          <h3>Evaporation is consumption.</h3>
+          <p>Industry estimates put large-facility withdrawals from the hundreds of thousands of gallons a day into the millions. A Pacific Institute review in 2026 reported individual facilities withdrawing roughly 270 gallons to 3.9 million gallons per day. EPRI scenarios for a 150&nbsp;MW hyperscale plant range from about 340,000 gallons a day to about 2.7 million, depending on architecture. Most of what cooling towers withdraw does not return.</p>
+        </article>
+        <article class="card">
+          <div class="num">Grid</div>
+          <h3>The penalty arrives at the worst hour.</h3>
+          <p>Dry coolers and mechanical refrigeration avoid the water bill. On a design-day afternoon they spend fan and compressor energy precisely when wholesale power is scarcest and the interconnection is already the binding constraint on the campus.</p>
+        </article>
+        <article class="card">
+          <div class="num">Siting</div>
+          <h3>The third veto.</h3>
+          <p>Communities now treat water draw and noise as grounds to delay or block a site. A thermal design that ignores the fence line is incomplete, even if the PUE model looks fine in a spreadsheet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Scale it yourself</p>
+          <h2>What a facility evaporates.</h2>
+        </div>
+        <p class="lede">Set a facility size. These are published industry figures for evaporative cooling, not DryCore measurements and not a DryCore saving.</p>
+      </div>
+      <div class="calc">
+        <label for="mw">Facility IT load: <b id="mwOut">100 MW</b></label>
+        <input type="range" id="mw" min="10" max="500" step="10" value="100" aria-describedby="calcNote">
+        <div class="ends"><span>10 MW</span><span>500 MW</span></div>
+        <div class="out">
+          <div><b id="gpd">528,000</b><span>gallons evaporated per day</span></div>
+          <div><b id="gpy">193M</b><span>gallons per year</span></div>
+          <div><b id="hh">1,761</b><span>U.S. households' daily use</span></div>
+        </div>
+        <p class="band">For scale against observed sites: a 2026 Pacific Institute review of 65 U.S. facilities found daily withdrawals ranging from <strong>270 gallons to 3.9 million gallons per day</strong>. The spread is the point. Architecture, not size alone, decides the number.</p>
+        <p class="note" id="calcNote" style="margin-top:14px">Scaled from the International Energy Agency's figure of roughly 2 million liters per day for an average 100&nbsp;MW data center, and the U.S. EPA's figure of roughly 300 gallons per day for an average American household. Evaporative cooling only. A closed-loop facility consumes far less; that is the premise of this company, not a result it has measured.</p>
+      </div>
+    </div>
+  </section>
+  <section class="block" style="padding-top:0">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">What operators already know</p>
+        <h2>Liquid inside the rack does not finish the job.</h2>
+        <p>Direct-to-chip and immersion move heat off the silicon more cleanly. They do not, by themselves, reject it to ambient. Somewhere at the building line that heat still has to cross into air, and that crossing is where water, power, and noise are decided.</p>
+        <p>Hyperscalers are already publishing zero-water and low-water designs. Microsoft has described fleet water-use effectiveness falling from 2.3 liters per kWh in early generations to 0.27 in 2025, with most owned sites on low- or zero-water cooling. The direction of travel is not in dispute. The open question is a rejection method that stays efficient when the air outside is hot, and quiet enough to permit.</p>
+      </div>
+      <div class="panel">
+        <p class="kicker">Industry context, not a DryCore forecast</p>
+        <ul class="list">
+          <li><strong>Cooling market</strong><span>Third-party estimates put global data-center cooling near $20.5 billion in 2025 and about $24.2 billion in 2026, with a path toward roughly $69 billion by 2035.</span></li>
+          <li><strong>Water capacity</strong><span>A 2026 analysis estimated U.S. data centers could need on the order of 700 million to 1.5 billion gallons per day of additional water-system capacity through 2030 if recent intensity holds.</span></li>
+          <li><strong>Our claim</strong><span>None of those figures are DryCore revenue, savings, or measured rejection efficiency. They describe the constraint the company is built against.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap" style="margin-top:28px">
+      <p class="note">Sources include GM Insights data-center cooling market estimates (2025–2035), the Pacific Institute’s 2026 facility withdrawal range, EPRI hyperscale scenarios cited in public summaries, Microsoft sustainability reporting on WUE, and the 2026 “Small Bottle, Big Pipe” capacity analysis. Figures are third-party and rounded.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>DryCore Systems, Inc. · Patent pending · © 2026</div>
+    <div><a href="technology.html">Next: the system →</a></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

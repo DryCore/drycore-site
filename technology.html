@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The system — DryCore Systems</title>
+<meta name="description" content="DryCore is developing closed-loop, waterless heat rejection. Bench validation against thresholds published before the first run. Patent pending.">
+<meta name="theme-color" content="#070d16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@360;460;540&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="emblem.jpg">
+</head>
+<body>
+<div class="progress"></div>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="emblem.jpg" alt=""><b>DRY<span>CORE</span></b></a>
+  <button class="menu-btn" aria-label="Menu">Menu</button>
+  <nav class="nav-links">
+    <a href="index.html">Overview</a>
+    <a href="problem.html">The constraint</a>
+    <a href="technology.html" aria-current="page">System</a>
+    <a href="nsf.html">NSF</a>
+    <a href="company.html">Company</a>
+    <a href="investors.html">Investors</a>
+    <a class="nav-cta" href="contact.html">Talk</a>
+  </nav>
+</header>
+<main>
+  <div class="wrap page-hero">
+    <p class="kicker">What we are building</p>
+    <h1>Closed loop. Three targets. Measured, or not claimed.</h1>
+    <p class="lede" style="margin-top:18px">DryCore is developing a closed-loop heat-rejection system with three design targets: zero water consumption, lower energy per watt of heat rejected in high ambient temperatures, and low enough noise to ease siting.</p>
+  </div>
+
+  <section class="block">
+    <div class="wrap diagram">
+      <div class="path">
+        <div class="node"><i>HT</i><div><strong>Heat, captured</strong><br><span class="muted">The building-side circuit stays closed. Evaporation is not the rejection step.</span></div></div>
+        <div class="flow"></div>
+        <div class="node"><i>RJ</i><div><strong>Heat, rejected</strong><br><span class="muted">The mechanism under test is meant to avoid the usual trade: save water, then spend the savings on fans and compressors at design-day ambient.</span></div></div>
+        <div class="flow"></div>
+        <div class="node"><i>AC</i><div><strong>Sound, bounded</strong><br><span class="muted">Noise is specified as a siting variable, not a later mitigation project.</span></div></div>
+        <div class="flow"></div>
+        <div class="node"><i>BN</i><div><strong>Bench, instrumented</strong><br><span class="muted">Pass and fail thresholds are published before the first run. That is the method. It is also the discipline.</span></div></div>
+      </div>
+      <div>
+        <p class="kicker">What this page will not do</p>
+        <h2>No coefficient until there is a coefficient.</h2>
+        <p>No performance figures appear on this site, because none have been measured yet. That is what the bench work is for. A number invented for a meeting would be the opposite of the standard the company is using.</p>
+        <p>Intellectual property is patent pending. U.S. provisional applications were filed in 2026. Pending is not granted. The mechanism itself is not described here.</p>
+        <div class="panel" style="margin-top:18px">
+          <p class="kicker">Validation sequence</p>
+          <ul class="list">
+            <li><strong>Before</strong><span>Thresholds written down: water use, energy per watt rejected at high ambient, acoustic signature.</span></li>
+            <li><strong>During</strong><span>Instrumented bench cell. The run does not get to renegotiate the threshold.</span></li>
+            <li><strong>After</strong><span>Pass, revise, or stop. Operator conversations are about fit, including why an approach like this might not fit a given site.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker">Where it sits in the plant</p>
+      <h2>Rejection is the unsolved edge.</h2>
+      <div class="cards" style="margin-top:22px">
+        <article class="card">
+          <h3>Not a chip cooler</h3>
+          <p>Cold plates and immersion are upstream. DryCore is aimed at the step after the heat has left the rack: getting it out of the building.</p>
+        </article>
+        <article class="card">
+          <h3>Not a cooling tower</h3>
+          <p>Towers are efficient because they evaporate. The design target is the water number those towers cannot post: zero consumption at the rejection step.</p>
+        </article>
+        <article class="card">
+          <h3>Not a louder dry cooler</h3>
+          <p>Conventional dry rejection trades water for fan power and, often, for noise. Both of those are treated here as first-order constraints.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision">
+    <figure>
+      <img src="vision-cool.jpg" alt="">
+      <figcaption>Visualization of a heat-rejection campus at night. Not a built project.</figcaption>
+    </figure>
+    <div class="vision-copy">
+      <p class="kicker">Operators</p>
+      <h2>We want the objection.</h2>
+      <p>We are speaking with data center operators, developers, and thermal engineers about what actually limits heat rejection at their sites — including why an approach like this might not fit.</p>
+      <a class="btn btn-gold" href="contact.html">Twenty minutes</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>DryCore Systems, Inc. · Patent pending · © 2026</div>
+    <div><a href="company.html">Next: the company →</a></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
