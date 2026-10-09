@@ -60,10 +60,8 @@
       { y: "2035e", v: 68.7, label: "$68.7B" }
     ],
     water: [
-      { y: "Low site", v: 0.27, label: "0.27M" },
-      { y: "EPRI 150 MW", v: 0.34, label: "0.34M" },
-      { y: "Peak tower", v: 1.0, label: "1M+" },
-      { y: "High site", v: 3.9, label: "3.9M" }
+      { y: "150 MW @ 0.36 L/kWh", v: 0.34, label: "0.34M" },
+      { y: "150 MW @ 2.8 L/kWh", v: 2.7, label: "2.7M" }
     ]
   };
   // 2030 interpolated roughly for display only; labeled estimate in caption.
@@ -102,9 +100,9 @@
       const toast = document.querySelector(".toast");
       if (toast) {
         toast.style.display = "block";
-        toast.textContent = "Opening your mail client to drycoresystems@gmail.com.";
+        toast.textContent = "Opening your mail client to drycoresystemsinc@gmail.com.";
       }
-      window.location.href = `mailto:drycoresystems@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:drycoresystemsinc@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 
